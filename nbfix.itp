@@ -1,0 +1,24 @@
+; NBFIX  epsilon(gromacs) [kJ/mol]= 4.184*(B^2)/(4*A) and sigma(gromacs) [nm] = 0.1 *(A/B)^(1/6)
+; sigma[nm] and epsilon [kJ/mol] for Amber99SB-UCB force field in gromacs
+; calculated by data from SI Table 3 (https://doi.org/10.1021/jp2118373)
+;name	type1  type2  1  sigma	 epsilon  Notes
+[ nonbond_params ]
+HC   OW_tip4pew     1  2.80758357E-01  2.36459631E-01 ;alkanes (new amber99sb-ucb)
+CT   OW_tip4pew     1  3.15452180E-01  6.24188613E-01 ;(Ala, Ile, Leu, Val) (new amber99sb-ucb)
+HA   OW_tip4pew     1  2.85599946E-01  2.25512845E-01 ;hydrocarbon aromatics(new amber99sb-ucb)
+CA   OW_tip4pew     1  3.24801271E-01  5.39976557E-01 ;(Phe) (new amber99sb-ucb)
+H1   OW_tip4pew     1  2.63249969E-01  3.13699150E-01 ;polar, one e-withdrawing heavy atom (new amber99sb-ucb)
+HQ   OW_tip4pew     1  2.14344084E-01  2.06140793E-01 ;primary amide (new amber99sb-ucb)
+NQ   OW_tip4pew     1  3.28842387E-01  6.78325983E-01 ;(Asn, Gln, neutral Lys) (new amber99sb-ucb)
+H    OW_tip4pew     1  2.08464153E-01  2.11495924E-01 ;secondary amide (new amber99sb-ucb)
+N    OW_tip4pew     1  3.10967396E-01  6.95947750E-01 ;(backbone, Pro) (new amber99sb-ucb)
+OH   OW_tip4pew     1  3.11541135E-01  1.03875062E+00 ;alcohols (Ser, Thr) (new amber99sb-ucb)
+OR   OW_tip4pew     1  3.03874951E-01  7.74239016E-01 ;phenols (Tyr) (new amber99sb-ucb)
+HS   OW_tip4pew     1  2.08998692E-01  2.45735979E-01 ;thiols (new amber99sb-ucb)
+SH   OW_tip4pew     1  3.27488222E-01  9.80593633E-01 ;(Cys) (new amber99sb-ucb)
+S    OW_tip4pew     1  3.09670247E-01  1.08736718E+00 ;thioethers (Met, disulfide bonds) (new amber99sb-ucb)
+O    OW_tip4pew     1  3.00293716E-01  6.47158772E-01 ;ketones/amides (new amber99sb-ucb)
+C    OW_tip4pew     1  3.21401602E-01  4.14143091E-01 ;(backbone) (new amber99sb-ucb)
+H4   OW_tip4pew     1  2.33534043E-01  3.20260535E-01 ;heterocyclic aromatics (Trp) (new amber99sb-ucb)
+H5   OW_tip4pew     1  2.93819377E-01  2.06727286E-01 ;imidazoles (His) (new amber99sb-ucb)
+      

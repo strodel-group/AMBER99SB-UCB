@@ -1,0 +1,30 @@
+General notes, to-do-list, and changes to the Amber99SB force field.
+
+
+1) Implementing the new atom types:
+
+Tyrosine:
+
+. Create atomtype OR in tyr. residue
+. Change OH atomype in tyr to OR
+. OR must have the same bonded parameters as OH
+
+
+Asparagine:
+
+. Create atomtype NQ in asn. residue
+. Change atomtype N of ND2 to NQ
+. NQ must have the same bonded parameters as N
+
+Glutamine:
+
+. Create atomtype NQ in gln. residue
+. Change atomtype N of NE2 to NQ
+. NQ must have the same bonded parameters as N
+
+Lysine:
+
+. Create atomtype NQ in lys. residue
+. Change atomtype N3 of NZ to NQ
+. NQ must have the same bonded parameters as N
+
